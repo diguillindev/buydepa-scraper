@@ -1,0 +1,992 @@
+[
+  {
+    "price": "2.288",
+    "address": "Coronel Godoy, 149, Estación Central",
+    "rooms": "2",
+    "baths": "1",
+    "area": "43",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/administration/properties/package-media/e708d6db-7c55-478a-8b2a-bdb5f42d5a1e_imgenes_1_photo13%20(1).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.857",
+    "address": "Av Maria, 6415, La Cisterna",
+    "rooms": "1",
+    "baths": "1",
+    "area": "33",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/fb2ef60c-6a76-4f5b-9b2b-50145e1fb434_718A5968.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.795",
+    "address": "San Francisco, 294, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/d2db1a1c-5a30-4ad4-88b2-d2ad3b7de88a_718A9498-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.855",
+    "address": "Carmen, 616, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/4b2ff8e6-6c95-491d-89ce-1392b0c4e915_718A0934-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "5.310",
+    "address": "Regina Pacis, 760, Ñuñoa",
+    "rooms": "2",
+    "baths": "2",
+    "area": "75",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/8da51045-77d0-4139-903b-8b8843a046bb_WhatsApp%20Image%202025-11-13%20at%202.57.25%20PM%20(2).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "4.210",
+    "address": "Grecia, 451, Ñuñoa",
+    "rooms": "2",
+    "baths": "2",
+    "area": "53",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/3e91e904-a2d2-4748-8795-0bd65c0dfc8d_718A8913-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.945",
+    "address": "San Pablo, 3610, Quinta Normal",
+    "rooms": "2",
+    "baths": "1",
+    "area": "44",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/47600b05-bc78-4946-a0a7-47b65b2aed18_718A0368.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.070",
+    "address": "Mapocho, 1450, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "35",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/87c0cbc6-2e08-4af3-be3a-c69dda5628b3_718A0966-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "6.310",
+    "address": "Avenida Eliecer Parada , 1105, Ñuñoa",
+    "rooms": "2",
+    "baths": "2",
+    "area": "88",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/41a067c9-9ec7-4cc7-8a40-685e7895bea0_IMG_3267.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.310",
+    "address": "Carmen, 616, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "47",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/db64c21e-b3f7-4f4c-93c3-e6fd69f3aa1e_718A8896-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.085",
+    "address": "Tarapaca, 1324, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "36",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/6cd75714-0e3e-4caf-a5fe-97b9d70c2e1f_718A9783-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.880",
+    "address": "Manuel Rodriguez Sur, 772, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "35",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/6f286077-dbd7-4b61-a850-7856cbe6cd80_718A2486.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "7.510",
+    "address": "Antonio Varas, 1610, Providencia",
+    "rooms": "3",
+    "baths": "2",
+    "area": "82.94",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/dcf3471b-3400-4c33-b9ce-288bd290d340_718A5891-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "3.777,16",
+    "address": "Avenida Quilín, 107, Macul",
+    "rooms": "3",
+    "baths": "2",
+    "area": "66.96",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/d1672b26-c867-4a35-a8b4-b491a94b77ed_718A8547.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.890",
+    "address": "Amunategui, 810, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "60",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/076a5483-498e-424b-b0cc-3332a9b9674a_718A2313-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.995",
+    "address": "Mapocho, 1450, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "35",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/95e67532-283d-468a-a8a9-0cc7f2b3013c_718A9013-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.810",
+    "address": "Avenida Quilín, 107, Macul",
+    "rooms": "2",
+    "baths": "1",
+    "area": "51.14",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/578fa0fb-4e7d-47eb-adc6-adc56f2af188_718A8547.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "4.210",
+    "address": "Zañartu, 2558, Ñuñoa",
+    "rooms": "2",
+    "baths": "2",
+    "area": "58.28",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/b8bb73ac-9bfe-4121-b594-aec8d4780186_718A3117-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.890",
+    "address": "Manuel Rodriguez Sur, 772, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "30",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/00dd5a07-a6ad-48a8-a8a5-ba68c648fb59_718A1835-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.795",
+    "address": "Nataniel Cox, 599, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "28",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/6972b731-ceb5-4c58-9879-fda7cea781b1_718A9204-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.610",
+    "address": "Eyzaguirre, 782, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "51",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/ca295269-fb59-457b-bdf1-b2994559447a_718A7347-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.160",
+    "address": "Tucapel Jimenez, 136, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "36",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/e9d84406-bbb6-455f-b3ef-f4669a3a28e6_Captura%20de%20pantalla%202025-05-05%20a%20la(s)%204.42.55%E2%80%AFp.m.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.930",
+    "address": "Carmen, 1153, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/a8b6900a-20f4-4922-ace5-b29361a3e7d2_718A9111-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "3.335",
+    "address": "Av. Dorsal, 824, Recoleta",
+    "rooms": "3",
+    "baths": "2",
+    "area": "58.6",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/33f37be6-462c-4b6b-adf4-75d28dd5c575_Fachada%20arreglada%20zoom.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.860",
+    "address": "Nataniel Cox, 599, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "30",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/1a6ba890-d9e5-402f-bb2d-74d450c774fe_718A2649-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.155",
+    "address": "Tucapel Jimenez, 136, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/156103ea-b310-4dea-bcbe-42de3def4ca8_718A7250-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.440",
+    "address": "Av. Dorsal, 824, Recoleta",
+    "rooms": "1",
+    "baths": "1",
+    "area": "35",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/057850d8-9d7d-42b1-8c21-190c2b1cbce7_Fachada%20arreglada%20zoom.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.110",
+    "address": "Tercera Avenida, 1221, San Miguel",
+    "rooms": "1",
+    "baths": "1",
+    "area": "32",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/2b86a662-ea3e-4703-a8da-ede5f5741005_Captura%20de%20pantalla%202025-05-05%20a%20la(s)%204.26.56%E2%80%AFp.m.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.895",
+    "address": "José Joaquin Prieto, 4260, San Miguel",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/6a1a461b-9ae2-4b1d-a406-89ab15c9df17_718A5277-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.900",
+    "address": "Santa Elena, 1760, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/17c61a71-ab75-4f6d-8b20-5077a925ba3f_718A7120-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.600",
+    "address": "Manuel Antonio Tocornal, 601, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "40",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/2b19d508-a333-4e4f-95ce-3641dc54ba62_WhatsApp%20Image%202025-05-12%20at%2011.45.33%20(14).jpeg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.460",
+    "address": "Amunategui, 630, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "23",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/6436de39-b182-4d42-a197-4cce59bbea3a_Imagen%20de%20WhatsApp%202024-12-18%20a%20las%2018.54.51_3aa04609.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.950",
+    "address": "Carmen, 616, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/b931d82a-2b4a-4bf6-a72e-48d89eb573fb_718A4753-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.790",
+    "address": "San Francisco, 294, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "27",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/39950399-cac6-446c-af2a-e91658348c2a_718A4813-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.460",
+    "address": "Bandera, 898, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "54",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/ed948966-0ca2-409d-ac1e-0e8e5321f4cf_Captura%20de%20pantalla%202025-12-04%20a%20la(s)%205.53.34%E2%80%AFp.m..png",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.190",
+    "address": "Dieciocho, 747, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "45.31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/93a1cc1c-84ed-48ab-96df-33ba1541580a_718A2607-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.170",
+    "address": "Argomedo, 390, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "37",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/6d0103f4-c36f-4d59-89e8-33201a3e26f6_718A7283.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.870",
+    "address": "Morandé, 626, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "52",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/900dee96-46c9-4548-a485-eebaf3f70166_718A0588-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "3.540",
+    "address": "Exequiel Fernandez, 6200, La Florida",
+    "rooms": "2",
+    "baths": "1",
+    "area": "55",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/bd1859fc-01a9-4192-8dde-e490fde9ad2b_718A7658-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.370",
+    "address": "Huérfanos, 1400, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "23",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/047137e3-12fa-45b5-b622-748577048f4f_Imagen%20de%20WhatsApp%202025-01-31%20a%20las%2015.05.46_8df18f02.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.135",
+    "address": "San Diego, 516, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "35",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/1c1ed827-dfe3-4475-a8ad-3d20a9accd84_718A0126-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.100",
+    "address": "San Petersburgo, 6351, San Miguel",
+    "rooms": "3",
+    "baths": "1",
+    "area": "49",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/15f310cc-594f-4533-aede-51883a65e5ce_718A9234-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.110",
+    "address": "Nataniel Cox, 1200, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/ab933414-7727-4383-9ae5-4d425d0f808c_519a.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.860",
+    "address": "Santa Elena, 1760, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/59ff7afe-0f49-425a-9a54-b8e6324f4ed8_Captura%20de%20pantalla%202025-12-05%20122315.png",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.860",
+    "address": "Santa Maria, 571, Recoleta",
+    "rooms": "1",
+    "baths": "1",
+    "area": "43",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/99546564-c2d8-465f-97d3-b9ded1d4ec4c_718A3696-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.150",
+    "address": "Eyzaguirre, 819, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/3b431625-1d8c-497d-823f-822414cc6a47_718A0424-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.210",
+    "address": "Carmen, 644, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "39",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/de10ea16-ff62-4e00-86fa-0b44dd36e35c_WhatsApp%20Image%202025-10-03%20at%2011.49.43%20AM%20(5).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.810",
+    "address": "Manuel Antonio Tocornal, 455, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "30.34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/06ea6968-1626-4c6e-a341-f343c6d9887c_WhatsApp%20Image%202025-10-15%20at%203.27.50%20PM.jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.160",
+    "address": "Calle Gay, 1728, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "38",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/69a913f7-d1f8-400e-ba37-a5077a1ef852_718A0629-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.060",
+    "address": "Portugal, 564, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/78ff07a2-c415-4345-8abe-9b31a73a9dee_718A1988-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.990",
+    "address": "Cruz, 1275, Independencia",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/9bded237-63a6-4448-9061-0744cae9f205_Foto%201%20Cocina%20y%20Living%20Depto%20702%20de%20Calle%20Cruz%201275.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "3.510",
+    "address": "Alcalde Pedro Alarcón, 851, San Miguel",
+    "rooms": "2",
+    "baths": "2",
+    "area": "56.08",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/3fe68bf3-feeb-4ca5-896d-096c63b8ceae_WhatsApp%20Image%202025-08-26%20at%209.39.28%20AM%20(1).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.360",
+    "address": "San Martin, 870, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "43",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/79de6ea8-948c-4d35-b23c-4f7a50db9b01_718A1300.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.260",
+    "address": "San Martin, 870, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "39",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/8f2fb2aa-f2c4-4651-af4b-6035fa065838_718A1273.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "3.340",
+    "address": "Punta Arenas, 6900, La Florida",
+    "rooms": "2",
+    "baths": "1",
+    "area": "45.5",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/cedd180d-7331-40b8-89e8-242917d2dda2_WhatsApp%20Image%202025-08-26%20at%209.40.52%20AM.jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.800",
+    "address": "San Isidro, 292, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "28",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/e1874332-5526-4456-a19a-f83cddf1baa6_WhatsApp%20Image%202025-09-29%20at%208.21.36%20AM%20(1).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.100",
+    "address": "Eleuterio Ramírez, 1024, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "38",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/28c2ae34-2299-458f-9ab8-ac8bdf76b827_718A1216.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.840",
+    "address": "San Martín, 714, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/6b5c0047-9a18-4af8-92a7-0b77b465e8a0_718A4730.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.710",
+    "address": "Hipódromo de Chile, 1372, Independencia",
+    "rooms": "2",
+    "baths": "1",
+    "area": "52",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/5640e6c2-53c0-4f22-be50-40df120c65a5_gimnasio.JPG",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.110",
+    "address": "Agustinas, 1612, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "33",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/ab7c22ac-0a1d-41a3-8ef3-be29c01be427_Captura%20de%20pantalla%202025-05-05%20a%20la(s)%204.36.20%E2%80%AFp.m.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.890",
+    "address": "Amunategui, 630, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "48",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/448836bf-335d-42ba-bc89-f9b45427da02_718A3758-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.660",
+    "address": "San Francisco, 632, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "52",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/79cb62d8-0621-4d14-8ebd-1970649736f3_718A7705-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.960",
+    "address": "Independencia, 1815, Independencia",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/f903e38d-760d-4a20-bc1a-30b23cc0747b_Foto%207%20Cocina%20Depto%201916.JPG",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.580",
+    "address": "Av. Vicuña Mackenna, 7801, La Florida",
+    "rooms": "2",
+    "baths": "1",
+    "area": "43",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/ee912455-af7e-4dfb-8824-8a2859db7c5c_718A2506-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.990",
+    "address": "Raulí, 596, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "32",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/4483053e-030d-4f38-b3dc-97c1b5b49bc7_718A3629-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.310",
+    "address": "Av. Hipodromo Chile, 1876, Independencia",
+    "rooms": "1",
+    "baths": "1",
+    "area": "37",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/c5b76cf2-e6be-4a4d-865b-c254c746a20c_Foto%201%20Cocina%20Dp%202008%20Edificio%20Activa%20Hipodromo.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.650",
+    "address": "San Isidro, 520, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "49",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/93c250c8-a036-4db5-b99e-784c80f9ddb0_718A4614-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.230",
+    "address": "Santa Rosa, 325, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "45",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/47ee012e-39b4-4f59-978f-80a325cc45b0_718A3670-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.160",
+    "address": "Leonor Cepeda, 952, Independencia",
+    "rooms": "1",
+    "baths": "1",
+    "area": "32",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/510e2e79-c322-4f0c-8912-17eae2cd82c9_718A1990-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.960",
+    "address": "El Parrón, 103, La Cisterna",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/758d496b-a5f9-41d4-9806-65b7fc268f9c_718A2143-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.075",
+    "address": "Presidente Balmaceda, 2170, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "32",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/a8cf8227-df66-4141-af1a-52538b3a7ff0_718A4001-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.050",
+    "address": "Carmen, 644, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "36",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/656e2f5c-d3a1-493e-b3d7-3e071e65264a_718A4586-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.550",
+    "address": "San Pablo, 1503, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "46.38",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/09b96e13-63d1-4401-b5bb-de9d53608823_WhatsApp%20Image%202025-08-11%20at%203.56.45%20PM%20(2).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.607",
+    "address": "Briones Luco, 0212, La Cisterna",
+    "rooms": "2",
+    "baths": "1",
+    "area": "49",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/11dde655-9e33-41b3-b690-feabd0cb4ed8_WhatsApp%20Image%202025-08-11%20at%2010.10.41%20PM%20(5).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.190",
+    "address": "San Martin, 733, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "32",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/a3bae1ee-fa9d-48c9-bacc-bb89ccdc9f3f_718A4653-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.760",
+    "address": "Amunategui, 695, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "51",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/f0999de8-7dea-4311-af77-f5df531478d4_718A4549-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.010",
+    "address": "Villasana, 1451, Quinta Normal",
+    "rooms": "2",
+    "baths": "1",
+    "area": "50",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/72ba54cc-c4f8-4d50-ba6a-0e05c135889c_718A2952-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.085",
+    "address": "Vicuña Mackenna, 7492, La Florida",
+    "rooms": "1",
+    "baths": "1",
+    "area": "36",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/1c615598-f5e5-439b-8fc8-393933739067_Entrada_Cocina.jpeg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.850",
+    "address": "San Pablo, 1503, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/22e67bab-4c4d-47ef-8fb8-d29ace16cf57_718A4701-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.950",
+    "address": "Santa Isabel, 489, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/4f5a50d3-88d0-4974-95a0-cdacd30bfdf1_718A7027-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.570",
+    "address": "Avenida Quilín, 107, Macul",
+    "rooms": "1",
+    "baths": "1",
+    "area": "41.88",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/867f883e-0c4e-414c-97b8-9fc0071d1fbe_718A8547.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.700",
+    "address": "Coronel Souper, 4158, Estación Central",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/89962d4d-565b-4818-9a9d-2eabb718a798_718A8891-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.880",
+    "address": "San Isidro, 635, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/65e70f26-9a2a-48f6-aeb0-8fd2fdbdac7b_718A8813-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.030",
+    "address": "Amunategui, 695, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "35",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/26d9b1b4-e041-42b2-a613-19b3029d7eb8_718A9131-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.760",
+    "address": "Constantino, 141, Estación Central",
+    "rooms": "1",
+    "baths": "1",
+    "area": "28",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/3f513488-fd64-4f06-8b24-1044cc2dfabc_718A3839-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.890",
+    "address": "Morande, 707, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/3c74142c-fedc-4ffa-a891-03081d51ab6c_718A5474-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.500",
+    "address": "Coronel Souper, 4060, Estación Central",
+    "rooms": "1",
+    "baths": "1",
+    "area": "29",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/8466794e-1d9f-476c-abdf-c07d81c0886a_Coronel%20Souper%204060%20-%20Depto%201508B%20(9).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.500",
+    "address": "Toro Mazotte, 110, Estación Central",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/e661bb8f-e625-42c8-85cc-35466a9dc2a5_Toro%20Mazotte%20110%20-%20Depto%20923%20(5).jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.700",
+    "address": "Portugal, 28, Santiago",
+    "rooms": "3",
+    "baths": "1",
+    "area": "71",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/2596221b-38a0-45e9-ac4a-49f0af287ece_WhatsApp%20Image%202026-01-20%20at%2012.09.13%20PM.jpeg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.470",
+    "address": "Tucapel Jimenez, 136, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "42",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/070eeeaa-fc99-4f58-abd2-aee8ad50e27a_718A0520-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.350",
+    "address": "Eleuterio Ramirez, 926, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "43",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/8ccf57be-b707-4c3b-8d9b-85c4a651e6e3_718A5429-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.500",
+    "address": "Gorbea, 1953, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "44",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/9a5b4c6e-dd0c-4430-ba3e-e33a9cac2524_IMG_20250417_111410.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.360",
+    "address": "Eleuterio Ramirez, 926, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "43",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/805f093a-c0d1-47ae-be0e-fca701bd825c_718A5373-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "1.860",
+    "address": "Fray Camilo Henriquez, 190, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "28",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/91e639d7-3236-413e-bcee-efd594268199_718A0212-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "3.110",
+    "address": "Amunategui, 630, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "52",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/59415eec-8ed1-4eb7-a629-30a8aaac8716_718A1939-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.130",
+    "address": "Argomedo, 390, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "37",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/01143ca9-257f-4c1e-9820-99fad2778d30_718A7155.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "3.110",
+    "address": "Arturo Prat, 636, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "47",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/db628708-5018-4f9e-80e7-f57a043a0696_718A3276-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.060",
+    "address": "Calle Gay, 1728, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/63555e24-a1ff-442e-810d-aaac3779001d_718A8946-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.810",
+    "address": "San Francisco, 294, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "27",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/285abd49-3d0e-45d1-ae79-2d81b27a5d6b_718A2583-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.970",
+    "address": "Morandé, 617, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/5cdef0c2-074d-4024-bb5f-5338b7c4f18c_718A1125-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.760",
+    "address": "San Francisco, 228, Santiago",
+    "rooms": "2",
+    "baths": "2",
+    "area": "46",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/875733ae-bcc8-4719-bc63-e5c1a46d6a4c_718A1440-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.380",
+    "address": "Diagonal Santa Elena, 2565, San Joaquín",
+    "rooms": "1",
+    "baths": "1",
+    "area": "34",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/334cd908-6b2d-4c24-9b28-8ce8c0766533_718A5202-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.910",
+    "address": "Eleuterio Ramirez, 926, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/e3b46f6b-a03f-4ec7-b4eb-0684ce4e71f7_718A5345-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.860",
+    "address": "Manuel Sánchez, 3271, Macul",
+    "rooms": "2",
+    "baths": "2",
+    "area": "48",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/99f68cc1-a28d-46f2-84cd-3a633dd95688_718A2468-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.210",
+    "address": "Av. Vicuña Mackenna, 2289, San Joaquín",
+    "rooms": "1",
+    "baths": "1",
+    "area": "33",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/335a18c7-0f0d-4758-a28d-31d2d5f0fa33_718A3892-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "1.990",
+    "address": "Portugal, 564, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "28",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/ffcf1c76-aa2c-4503-a50d-31d8cf3e2635_718A3972-HDR.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "3.170",
+    "address": "San Isidro, 250, Santiago",
+    "rooms": "3",
+    "baths": "2",
+    "area": "58",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/de65e555-6c03-47a3-945a-92f131ae9adf_718A8842.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.610",
+    "address": "Alcalde Pedro Alarcón, 997, San Miguel",
+    "rooms": "2",
+    "baths": "1",
+    "area": "46",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/576e8fae-3ed8-4679-8024-96038e9fd26c_654a.jpg",
+    "status": "Reservado"
+  },
+  {
+    "price": "2.000",
+    "address": "Portugal, 406, Santiago",
+    "rooms": "1",
+    "baths": "1",
+    "area": "31",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/da24602b-4b46-45cd-a98e-08ed031b8f43_718A5485-HDR.jpg",
+    "status": "Disponible"
+  },
+  {
+    "price": "2.320",
+    "address": "San Martín, 714, Santiago",
+    "rooms": "2",
+    "baths": "1",
+    "area": "46",
+    "image": "https://prod-buydepa-public.s3.us-east-1.amazonaws.com/core/sales/files/f1e17979-0f4c-4bed-bfab-f76648debb81_718A6026.jpg",
+    "status": "Disponible"
+  }
+]

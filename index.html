@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f3f4f6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #1f2937;
+        }
+
+        .propiedades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .propiedad-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .propiedad-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .propiedad-imagen {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .propiedad-imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .propiedad-status {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .propiedad-status.disponible {
+            background: #10b981;
+            color: white;
+        }
+
+        .propiedad-status.reservado {
+            background: #f59e0b;
+            color: white;
+        }
+
+        .propiedad-content {
+            padding: 20px;
+        }
+
+        .propiedad-precio {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 8px;
+        }
+
+        .propiedad-direccion {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .propiedad-features {
+            display: flex;
+            gap: 16px;
+        }
+
+        .feature {
+            font-size: 14px;
+            color: #4b5563;
+            font-weight: 500;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 56px;
+            padding: 10px 20px;
+            background: #25d366;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            text-align: center;
+            transition: background 0.2s;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128c7e;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #6b7280;
+            font-size: 18px;
+        }
+
+        .error {
+            text-align: center;
+            padding: 40px;
+            color: #ef4444;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Propiedades</h1>
+        <div id="propiedades-container" class="propiedades-grid">
+            <p class="loading">Cargando propiedades</p>
+        </div>
+    </div>
+
+    <script>
+        // Función para crear elemento con atributos y contenido seguro
+        function createElement(tag, attrs = {}, text = '') {
+            const el = document.createElement(tag);
+            Object.entries(attrs).forEach(([key, val]) => el.setAttribute(key, val));
+            if (text) el.textContent = text;
+            return el;
+        }
+
+        // Crear una card de propiedad
+        function createCard(prop) {
+            const article = createElement('article', { class: 'propiedad-card' });
+
+            // Imagen
+            const imgContainer = createElement('div', { class: 'propiedad-imagen' });
+            const img = createElement('img', {
+                src: prop.image,
+                alt: prop.address,
+                loading: 'lazy'
+            });
+            const status = createElement('span', {
+                class: `propiedad-status ${prop.status.toLowerCase()}`
+            }, prop.status);
+
+            imgContainer.append(img, status);
+
+            // Contenido
+            const content = createElement('div', { class: 'propiedad-content' });
+            const price = createElement('h3', { class: 'propiedad-precio' }, `${prop.price} UF`);
+            const address = createElement('p', { class: 'propiedad-direccion' }, prop.address);
+
+            // Features
+            const features = createElement('div', { class: 'propiedad-features' });
+            const rooms = createElement('span', { class: 'feature' }, `${prop.rooms}D`);
+            const baths = createElement('span', { class: 'feature' }, `${prop.baths}B`);
+            const area = createElement('span', { class: 'feature' }, `${prop.area}m²`);
+
+            // Botón WhatsApp
+            const whatsappBtn = createElement('a', {
+                class: 'whatsapp-btn',
+                href: `https://wa.me/?text=Hola, me interesa la propiedad en ${encodeURIComponent(prop.address)} - ${prop.price} UF`,
+                target: '_blank',
+                rel: 'noopener noreferrer'
+            }, 'Contactanos');
+
+            features.append(rooms, baths, area, whatsappBtn);
+            content.append(price, address, features);
+            article.append(imgContainer, content);
+
+            return article;
+        }
+
+        // Cargar y renderizar propiedades
+        async function loadProperties() {
+            const container = document.getElementById('propiedades-container');
+
+            try {
+                const response = await fetch('properties.json');
+                if (!response.ok) throw new Error('No se pudo cargar el JSON');
+
+                const data = await response.json();
+
+                // Limpiar container
+                container.textContent = '';
+
+                // Mostrar todas o filtrar disponibles
+                const propiedades = data; // o data.filter(p => p.status === 'Disponible')
+
+                propiedades.forEach(prop => {
+                    container.appendChild(createCard(prop));
+                });
+
+            } catch (error) {
+                container.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+                console.error(error);
+            }
+        }
+
+        // Ejecutar cuando el DOM esté listo
+        document.addEventListener('DOMContentLoaded', loadProperties);
+    </script>
+</body>
+
+</html>
