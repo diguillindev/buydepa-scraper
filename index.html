@@ -23,6 +23,44 @@
             margin: 0 auto;
         }
 
+        .filtros-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.filtros-container input {
+    flex: 1;
+    min-width: 120px;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.filtros-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#btn-filtrar {
+    background: #3b82f6;
+    color: white;
+}
+
+#btn-limpiar {
+    background: #e5e7eb;
+    color: #374151;
+}
+
         h1 {
             text-align: center;
             margin-bottom: 30px;
@@ -81,6 +119,57 @@
             color: white;
         }
 
+        .location-icon {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 40px;
+            height: 40px;
+            background: #38bdf8;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            z-index: 10;
+        }
+
+        .location-icon:hover {
+            transform: scale(1.1);
+        }
+
+        .location-icon.rotating {
+            animation: spin 0.6s ease-in-out;
+        }
+
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .location-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: none;
+        }
+
+        .map-container.active {
+            display: block;
+        }
+
+        .propiedad-imagen img.hidden {
+            display: none;
+        }
+
         .propiedad-content {
             padding: 20px;
         }
@@ -101,6 +190,7 @@
 
         .propiedad-features {
             display: flex;
+            justify-content: left;
             gap: 16px;
         }
 
@@ -112,7 +202,7 @@
 
         .whatsapp-btn {
             display: inline-block;
-            margin-top: 56px;
+            margin-top: 36px;
             padding: 10px 20px;
             background: #25d366;
             color: white;
@@ -140,10 +230,77 @@
             padding: 40px;
             color: #ef4444;
         }
+        /* BOTÓN FILTROS MÓVIL */
+.btn-open-filtros {
+    display: none;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* WRAPPER NORMAL (DESKTOP) */
+.filtros-wrapper {
+    position: static;
+}
+
+/* MODO MÓVIL */
+@media (max-width: 768px) {
+
+    .btn-open-filtros {
+        display: block;
+    }
+
+    .filtros-wrapper {
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.55);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+    }
+
+    .filtros-wrapper.active {
+        display: flex;
+    }
+
+    .filtros-container {
+        flex-direction: column;
+        width: 90%;
+        max-width: 420px;
+    }
+}
+
     </style>
 </head>
 
 <body>
+        <!-- Botón visible SOLO en móvil -->
+    <button class="btn-open-filtros" id="btn-open-filtros">
+        Filtrar 🔍
+    </button>
+
+    <!-- Wrapper overlay -->
+    <div class="filtros-wrapper" id="filtros-wrapper">
+
+        <!-- TU BLOQUE ORIGINAL, intacto -->
+        <div class="filtros-container">
+            <input type="number" id="filtro-precio-min" placeholder="Precio min UF">
+            <input type="number" id="filtro-precio-max" placeholder="Precio max UF">
+            <input type="number" id="filtro-habitaciones" placeholder="Dormitorios min">
+            <input type="number" id="filtro-banos" placeholder="Baños min">
+            <input type="number" id="filtro-metros" placeholder="M² min">
+            <button id="btn-filtrar">Filtrar</button>
+            <button id="btn-limpiar">Limpiar</button>
+        </div>
+
+    </div>
+
     <div class="container">
         <h1>Propiedades</h1>
         <div id="propiedades-container" class="propiedades-grid">
@@ -175,7 +332,49 @@
                 class: `propiedad-status ${prop.status.toLowerCase()}`
             }, prop.status);
 
-            imgContainer.append(img, status);
+            // Icono de ubicación celeste
+            const locationIcon = createElement('div', { class: 'location-icon' });
+            locationIcon.innerHTML = `
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+            `;
+
+            // Contenedor del mapa (iframe)
+            const mapContainer = createElement('iframe', { 
+                class: 'map-container',
+                allowfullscreen: '',
+                loading: 'lazy'
+            });
+
+            // Evento click para el icono de ubicación
+            locationIcon.addEventListener('click', () => {
+                // Agregar clase de rotación
+                locationIcon.classList.add('rotating');
+                
+                // Quitar clase de rotación después de la animación
+                setTimeout(() => {
+                    locationIcon.classList.remove('rotating');
+                }, 600);
+
+                // Toggle entre imagen y mapa
+                const isMapVisible = mapContainer.classList.contains('active');
+                
+                if (!isMapVisible) {
+                    // Mostrar mapa
+                    const encodedAddress = encodeURIComponent(prop.address);
+                    mapContainer.src = `https://maps.google.com/maps?q=${encodedAddress}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+                    img.classList.add('hidden');
+                    mapContainer.classList.add('active');
+                } else {
+                    // Volver a mostrar imagen
+                    img.classList.remove('hidden');
+                    mapContainer.classList.remove('active');
+                    mapContainer.src = '';
+                }
+            });
+
+            imgContainer.append(img, status, locationIcon, mapContainer);
 
             // Contenido
             const content = createElement('div', { class: 'propiedad-content' });
@@ -191,46 +390,110 @@
             // Botón WhatsApp
             const whatsappBtn = createElement('a', {
                 class: 'whatsapp-btn',
-                href: `https://wa.me/?text=Hola, me interesa la propiedad en ${encodeURIComponent(prop.address)} - ${prop.price} UF`,
+                href: `https://wa.me/+56979785883?text=Hola , me interesa la propiedad en ${encodeURIComponent(prop.address)} - ${prop.price} UF`,
                 target: '_blank',
                 rel: 'noopener noreferrer'
             }, 'Contactanos');
 
-            features.append(rooms, baths, area, whatsappBtn);
-            content.append(price, address, features);
+            features.append(rooms, baths, area);
+            content.append(price, address, features, whatsappBtn);
             article.append(imgContainer, content);
 
             return article;
         }
 
-        // Cargar y renderizar propiedades
         async function loadProperties() {
-            const container = document.getElementById('propiedades-container');
+    const container = document.getElementById('propiedades-container');
+    
+    try {
+        const response = await fetch('properties.json');
+        if (!response.ok) throw new Error('No se pudo cargar el JSON');
+        
+        propiedadesOriginales = await response.json();
+        
+        container.textContent = '';
+        propiedadesOriginales.forEach(prop => {
+            container.appendChild(createCard(prop));
+        });
+        
+    } catch (error) {
+        container.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+    }
+}
 
-            try {
-                const response = await fetch('properties.json');
-                if (!response.ok) throw new Error('No se pudo cargar el JSON');
+function filtrarPropiedades() {
+    const precioMin = parseFloat(document.getElementById('filtro-precio-min').value) || 0;
+    const precioMax = parseFloat(document.getElementById('filtro-precio-max').value) || Infinity;
+    const habitaciones = parseInt(document.getElementById('filtro-habitaciones').value) || 0;
+    const banos = parseInt(document.getElementById('filtro-banos').value) || 0;
+    const metros = parseInt(document.getElementById('filtro-metros').value) || 0;
+    
+    const filtradas = propiedadesOriginales.filter(prop => {
+        return prop.price >= precioMin &&
+               prop.price <= precioMax &&
+               prop.rooms >= habitaciones &&
+               prop.baths >= banos &&
+               prop.area >= metros;
+    });
+    
+    const container = document.getElementById('propiedades-container');
+    container.textContent = '';
+    
+    if (filtradas.length === 0) {
+        container.innerHTML = '<p class="loading">No se encontraron propiedades con esos filtros</p>';
+    } else {
+        filtradas.forEach(prop => {
+            container.appendChild(createCard(prop));
+        });
+    }
+}
 
-                const data = await response.json();
+function limpiarFiltros() {
+    document.getElementById('filtro-precio-min').value = '';
+    document.getElementById('filtro-precio-max').value = '';
+    document.getElementById('filtro-habitaciones').value = '';
+    document.getElementById('filtro-banos').value = '';
+    document.getElementById('filtro-metros').value = '';
+    
+    const container = document.getElementById('propiedades-container');
+    container.textContent = '';
+    propiedadesOriginales.forEach(prop => {
+        container.appendChild(createCard(prop));
+    });
+}
 
-                // Limpiar container
-                container.textContent = '';
+const filtrosWrapper = document.getElementById('filtros-wrapper');
+const btnOpenFiltros = document.getElementById('btn-open-filtros');
 
-                // Mostrar todas o filtrar disponibles
-                const propiedades = data; // o data.filter(p => p.status === 'Disponible')
+btnOpenFiltros.addEventListener('click', () => {
+    filtrosWrapper.classList.add('active');
+});
 
-                propiedades.forEach(prop => {
-                    container.appendChild(createCard(prop));
-                });
+/* Cerrar al filtrar */
+document.getElementById('btn-filtrar').addEventListener('click', () => {
+    filtrarPropiedades();
+    filtrosWrapper.classList.remove('active');
+});
 
-            } catch (error) {
-                container.innerHTML = `<p class="error">Error: ${error.message}</p>`;
-                console.error(error);
-            }
-        }
+/* Cerrar al limpiar */
+document.getElementById('btn-limpiar').addEventListener('click', () => {
+    limpiarFiltros();
+    filtrosWrapper.classList.remove('active');
+});
 
-        // Ejecutar cuando el DOM esté listo
-        document.addEventListener('DOMContentLoaded', loadProperties);
+/* Cerrar tocando el overlay */
+filtrosWrapper.addEventListener('click', (e) => {
+    if (e.target === filtrosWrapper) {
+        filtrosWrapper.classList.remove('active');
+    }
+});
+
+
+// Event listeners
+document.getElementById('btn-filtrar').addEventListener('click', filtrarPropiedades);
+document.getElementById('btn-limpiar').addEventListener('click', limpiarFiltros);
+
+document.addEventListener('DOMContentLoaded', loadProperties);
     </script>
 </body>
 
