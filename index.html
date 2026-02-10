@@ -24,42 +24,45 @@
         }
 
         .filtros-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-bottom: 30px;
-    padding: 20px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 9999;
+        }
 
-.filtros-container input {
-    flex: 1;
-    min-width: 120px;
-    padding: 10px;
-    border: 1px solid #d1d5db;
-    border-radius: 8px;
-    font-size: 14px;
-}
+        .filtros-container input {
+            flex: 1;
+            min-width: 120px;
+            padding: 10px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 14px;
+        }
 
-.filtros-container button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-}
+        .filtros-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
 
-#btn-filtrar {
-    background: #3b82f6;
-    color: white;
-}
+        #btn-filtrar {
+            background: #3b82f6;
+            color: white;
+        }
 
-#btn-limpiar {
-    background: #e5e7eb;
-    color: #374151;
-}
+        #btn-limpiar {
+            background: #e5e7eb;
+            color: #374151;
+        }
 
         h1 {
             text-align: center;
@@ -145,8 +148,13 @@
         }
 
         @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         .location-icon svg {
@@ -230,57 +238,57 @@
             padding: 40px;
             color: #ef4444;
         }
+
         /* BOTÓN FILTROS MÓVIL */
-.btn-open-filtros {
-    display: none;
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    background: #3b82f6;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-weight: 600;
-}
+        .btn-open-filtros {
+            display: none;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: 600;
+        }
 
-/* WRAPPER NORMAL (DESKTOP) */
-.filtros-wrapper {
-    position: static;
-}
+        /* WRAPPER NORMAL (DESKTOP) */
+        .filtros-wrapper {
+            position: static;
+        }
 
-/* MODO MÓVIL */
-@media (max-width: 768px) {
+        /* MODO MÓVIL */
+        @media (max-width: 768px) {
 
-    .btn-open-filtros {
-        display: block;
-    }
+            .btn-open-filtros {
+                display: block;
+            }
 
-    .filtros-wrapper {
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.55);
-        display: none;
-        align-items: center;
-        justify-content: center;
-        z-index: 999;
-    }
+            .filtros-wrapper {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.55);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                z-index: 999;
+            }
 
-    .filtros-wrapper.active {
-        display: flex;
-    }
+            .filtros-wrapper.active {
+                display: flex;
+            }
 
-    .filtros-container {
-        flex-direction: column;
-        width: 90%;
-        max-width: 420px;
-    }
-}
-
+            .filtros-container {
+                flex-direction: column;
+                width: 90%;
+                max-width: 420px;
+            }
+        }
     </style>
 </head>
 
 <body>
-        <!-- Botón visible SOLO en móvil -->
+    <!-- Botón visible SOLO en móvil -->
     <button class="btn-open-filtros" id="btn-open-filtros">
         Filtrar 🔍
     </button>
@@ -341,7 +349,7 @@
             `;
 
             // Contenedor del mapa (iframe)
-            const mapContainer = createElement('iframe', { 
+            const mapContainer = createElement('iframe', {
                 class: 'map-container',
                 allowfullscreen: '',
                 loading: 'lazy'
@@ -351,7 +359,7 @@
             locationIcon.addEventListener('click', () => {
                 // Agregar clase de rotación
                 locationIcon.classList.add('rotating');
-                
+
                 // Quitar clase de rotación después de la animación
                 setTimeout(() => {
                     locationIcon.classList.remove('rotating');
@@ -359,7 +367,7 @@
 
                 // Toggle entre imagen y mapa
                 const isMapVisible = mapContainer.classList.contains('active');
-                
+
                 if (!isMapVisible) {
                     // Mostrar mapa
                     const encodedAddress = encodeURIComponent(prop.address);
@@ -403,98 +411,100 @@
         }
 
         async function loadProperties() {
-    const container = document.getElementById('propiedades-container');
-    
-    try {
-        const response = await fetch('properties.json');
-        if (!response.ok) throw new Error('No se pudo cargar el JSON');
-        
-        propiedadesOriginales = await response.json();
-        
-        container.textContent = '';
-        propiedadesOriginales.forEach(prop => {
-            container.appendChild(createCard(prop));
+            const container = document.getElementById('propiedades-container');
+
+            try {
+                const response = await fetch('properties_with_commune.json');
+                if (!response.ok) throw new Error('No se pudo cargar el JSON');
+
+                propiedadesOriginales = await response.json();
+
+                container.textContent = '';
+                propiedadesOriginales.forEach(prop => {
+                    container.appendChild(createCard(prop));
+                });
+
+            } catch (error) {
+                container.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+            }
+        }
+
+        function filtrarPropiedades() {
+            const precioMin = parseFloat(document.getElementById('filtro-precio-min').value) || 0;
+            const precioMax = parseFloat(document.getElementById('filtro-precio-max').value) || Infinity;
+            const habitaciones = parseInt(document.getElementById('filtro-habitaciones').value) || 0;
+            const banos = parseInt(document.getElementById('filtro-banos').value) || 0;
+            const metros = parseInt(document.getElementById('filtro-metros').value) || 0;
+
+            const filtradas = propiedadesOriginales.filter(prop => {
+                return prop.price >= precioMin &&
+                    prop.price <= precioMax &&
+                    prop.rooms >= habitaciones &&
+                    prop.baths >= banos &&
+                    prop.area >= metros;
+            });
+
+            const container = document.getElementById('propiedades-container');
+            container.textContent = '';
+
+            if (filtradas.length === 0) {
+                container.innerHTML = '<p class="loading">No se encontraron propiedades con esos filtros</p>';
+            } else {
+                filtradas.forEach(prop => {
+                    container.appendChild(createCard(prop));
+                });
+            }
+        }
+
+        function limpiarFiltros() {
+            document.getElementById('filtro-precio-min').value = '';
+            document.getElementById('filtro-precio-max').value = '';
+            document.getElementById('filtro-habitaciones').value = '';
+            document.getElementById('filtro-banos').value = '';
+            document.getElementById('filtro-metros').value = '';
+
+            const container = document.getElementById('propiedades-container');
+            container.textContent = '';
+            propiedadesOriginales.forEach(prop => {
+                container.appendChild(createCard(prop));
+            });
+        }
+
+        const filtrosWrapper = document.getElementById('filtros-wrapper');
+        const btnOpenFiltros = document.getElementById('btn-open-filtros');
+
+        btnOpenFiltros.addEventListener('click', () => {
+            filtrosWrapper.classList.add('active');
         });
-        
-    } catch (error) {
-        container.innerHTML = `<p class="error">Error: ${error.message}</p>`;
-    }
-}
 
-function filtrarPropiedades() {
-    const precioMin = parseFloat(document.getElementById('filtro-precio-min').value) || 0;
-    const precioMax = parseFloat(document.getElementById('filtro-precio-max').value) || Infinity;
-    const habitaciones = parseInt(document.getElementById('filtro-habitaciones').value) || 0;
-    const banos = parseInt(document.getElementById('filtro-banos').value) || 0;
-    const metros = parseInt(document.getElementById('filtro-metros').value) || 0;
-    
-    const filtradas = propiedadesOriginales.filter(prop => {
-        return prop.price >= precioMin &&
-               prop.price <= precioMax &&
-               prop.rooms >= habitaciones &&
-               prop.baths >= banos &&
-               prop.area >= metros;
-    });
-    
-    const container = document.getElementById('propiedades-container');
-    container.textContent = '';
-    
-    if (filtradas.length === 0) {
-        container.innerHTML = '<p class="loading">No se encontraron propiedades con esos filtros</p>';
-    } else {
-        filtradas.forEach(prop => {
-            container.appendChild(createCard(prop));
+        /* Cerrar al filtrar */
+        document.getElementById('btn-filtrar').addEventListener('click', () => {
+            filtrarPropiedades();
+            filtrosWrapper.classList.remove('active');
         });
-    }
-}
 
-function limpiarFiltros() {
-    document.getElementById('filtro-precio-min').value = '';
-    document.getElementById('filtro-precio-max').value = '';
-    document.getElementById('filtro-habitaciones').value = '';
-    document.getElementById('filtro-banos').value = '';
-    document.getElementById('filtro-metros').value = '';
-    
-    const container = document.getElementById('propiedades-container');
-    container.textContent = '';
-    propiedadesOriginales.forEach(prop => {
-        container.appendChild(createCard(prop));
-    });
-}
+        /* Cerrar al limpiar */
+        document.getElementById('btn-limpiar').addEventListener('click', () => {
+            limpiarFiltros();
+            filtrosWrapper.classList.remove('active');
+        });
 
-const filtrosWrapper = document.getElementById('filtros-wrapper');
-const btnOpenFiltros = document.getElementById('btn-open-filtros');
-
-btnOpenFiltros.addEventListener('click', () => {
-    filtrosWrapper.classList.add('active');
-});
-
-/* Cerrar al filtrar */
-document.getElementById('btn-filtrar').addEventListener('click', () => {
-    filtrarPropiedades();
-    filtrosWrapper.classList.remove('active');
-});
-
-/* Cerrar al limpiar */
-document.getElementById('btn-limpiar').addEventListener('click', () => {
-    limpiarFiltros();
-    filtrosWrapper.classList.remove('active');
-});
-
-/* Cerrar tocando el overlay */
-filtrosWrapper.addEventListener('click', (e) => {
-    if (e.target === filtrosWrapper) {
-        filtrosWrapper.classList.remove('active');
-    }
-});
+        /* Cerrar tocando el overlay */
+        filtrosWrapper.addEventListener('click', (e) => {
+            if (e.target === filtrosWrapper) {
+                filtrosWrapper.classList.remove('active');
+            }
+        });
 
 
-// Event listeners
-document.getElementById('btn-filtrar').addEventListener('click', filtrarPropiedades);
-document.getElementById('btn-limpiar').addEventListener('click', limpiarFiltros);
+        // Event listeners
+        document.getElementById('btn-filtrar').addEventListener('click', filtrarPropiedades);
+        document.getElementById('btn-limpiar').addEventListener('click', limpiarFiltros);
 
-document.addEventListener('DOMContentLoaded', loadProperties);
+        document.addEventListener('DOMContentLoaded', loadProperties);
     </script>
+
+    <script src="comuna-filter.js"></script>
 </body>
 
 </html>
